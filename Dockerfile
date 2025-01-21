@@ -1,7 +1,7 @@
-FROM debian:stretch-slim
+FROM alpine:latest
 
-LABEL maintainer="Kerem Bozdas <krmbzds.github@gmail.com>"
-LABEL repository="https://github.com/krmbzds/docker-activitywatch"
+LABEL maintainer="dotup.de <dotup.software@gmail.com>"
+LABEL repository="https://github.com/compose-docker/docker-activitywatch"
 
 RUN mkdir /app
 WORKDIR /app
