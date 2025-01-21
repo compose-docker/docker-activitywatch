@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM ubuntu:latest
 
 LABEL maintainer="dotup.de <dotup.software@gmail.com>"
 LABEL repository="https://github.com/compose-docker/docker-activitywatch"
