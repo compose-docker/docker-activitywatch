@@ -3,7 +3,7 @@ version: '3.7'
 services:
   aw-server:
     build: .
-    container_name: activitywatch
+    container_name: aw-server
     image: aw-server
     ports:
       - "5600:5600/tcp"
