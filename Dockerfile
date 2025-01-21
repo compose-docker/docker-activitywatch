@@ -8,13 +8,7 @@ WORKDIR /app
 
 RUN apt-get -qq -y update \
   && apt-get install -qq -y --no-install-recommends ca-certificates unzip wget \
-  && wget -q -O - https://api.github.com/repos/activitywatch/activitywatch/releases \
-  | grep "https" \
-  | grep "linux-x86_64" \
-  | head -1 \
-  | cut -d : -f 2,3 \
-  | tr -d '", ' \
-  | wget -q -i - \
+  && wget -q -O - https://github.com/ActivityWatch/activitywatch/releases/download/v0.13.2/activitywatch-v0.13.2-linux-x86_64.zip
   && unzip ./activitywatch*.zip \
   && rm ./activitywatch*.zip \
   && chmod +x ./activitywatch/aw-server \
